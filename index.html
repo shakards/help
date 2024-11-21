@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Icon Tutorial</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+
+    <!-- Live Style Switcher - Demo Only -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+
+    <style>
+        /* Body Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Icon Styling */
+        .navbar i {
+            margin-right: 8px;
+        }
+
+        /* Copy Button Styling */
+        .copy-btn {
+            margin-left: 88.5%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn.copied {
+            background-color: #28a745;
+        }
+
+        /* Code Box Styling */
+        pre {
+            margin-left: 8%;
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-family: monospace;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            display: block;
+            padding: 10px;
+        }
+
+        /* Syntax Highlighting */
+        .tag {
+            color: #0000FF; /* Blue */
+        }
+
+        .attribute {
+            color: #FF0000; /* Red */
+            font-weight: bold; /* Thicker Red */
+        }
+
+        .value {
+            color: #1e90ff; /* Blue */
+        }
+
+        .hex-value {
+            color: #32CD32; /* Green */
+        }
+
+        .remaining-text {
+            color: #FF1493; /* Pink */
+        }
+
+        .highlight {
+            color: #fdf9ff;
+            background-color: black;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .explanation {
+            display: block;
+            margin-top: 5px;
+            margin-left: 25px;
+            color: #444;
+            font-style: italic;
+            font-size: 0.9em;
+            padding-left: 20px;
+            color: #72b626;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Navbar with Icon Example -->
+        <div class="navbar">
+            <div class="logo">MyWebsite</div>
+            <a href="#home"><i class="fas fa-home"></i>Home</a>
+            <a href="#about"><i class="fas fa-info-circle"></i>About</a>
+            <a href="#services"><i class="fas fa-cogs"></i>Services</a>
+            <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+        </div>
+        <br>
+
+        <h1>Navbar with Icon Tutorial</h1>
+        <p>This tutorial demonstrates how to create a simple HTML navigation bar with icons.</p>
+        <h2>What is a Navbar with Icons?</h2>
+        <p>
+            A navbar with icons is a navigation bar that includes both text and icons for each link. The icons can help users quickly identify the sections or pages they are accessing.
+        </p>
+        <h3>Why Use Icons in a Navbar?</h3>
+        <ul>
+            <li><strong>Enhanced Visual Appeal:</strong> Icons make the navbar more engaging and user-friendly.</li>
+            <li><strong>Quick Navigation:</strong> Icons help users quickly understand where each link leads.</li>
+            <li><strong>Modern Look:</strong> Adding icons gives the navbar a more contemporary, sleek design.</li>
+        </ul>
+
+        <!-- Code Box -->
+        <div style="position: relative;">
+            <pre id="code-box">
+        <code>&lt;<span class="tag">!DOCTYPE</span> html&gt;
+        &lt;<span class="tag">html</span> lang=<span class="attribute">"en"</span>&gt;
+        &lt;<span class="tag">head</span&gt;
+          &lt;<span class="tag">meta</span> charset=<span class="attribute">"UTF-8"</span>&gt;
+          &lt;<span class="tag">meta</span> name=<span class="attribute">"viewport"</span> content=<span class="attribute">"width=device-width, initial-scale=1.0"</span>&gt;
+          &lt;<span class="tag">title</span>&gt;Navbar with Icon&lt;/span&gt;
+          &lt;<span class="tag">link</span> rel=<span class="attribute">"stylesheet"</span> href=<span class="attribute">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"</span>&gt;
+          &lt;<span class="tag">style</span>&gt;
+            .navbar {
+              display: flex;
+              align-items: center;
+              background-color: <span class="hex-value">#333</span>;
+              padding: 10px 20px;
+            }
+            .navbar .logo {
+              font-size: 20px;
+              font-weight: bold;
+              color: white;
+              margin-right: auto;
+            }
+            .navbar a {
+              color: white;
+              text-decoration: none;
+              padding: 10px 15px;
+              margin: 0 5px;
+              display: flex;
+              align-items: center;
+            }
+            .navbar a:hover {
+              background-color: <span class="hex-value">#575757</span>;
+              border-radius: 5px;
+            }
+            .navbar i {
+              margin-right: 8px;
+            }
+          &lt;/<span class="tag">style</span>&gt;
+        &lt;/<span class="tag">head</span>&gt;
+        &lt;<span class="tag">body</span>&gt;
+          &lt;<span class="tag">div</span> class=<span class="attribute">"navbar"</span>&gt;
+            &lt;<span class="tag">div</span> class=<span class="attribute">"logo"</span>&gt;MyWebsite&lt;/<span class="tag">div</span>&gt;
+            &lt;<span class="tag">a</span> href=<span class="attribute">"#home"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-home"</span>&gt;&lt;/<span class="tag">i</span>&gt;Home&lt;/<span class="tag">a</span>&gt;
+            &lt;<span class="tag">a</span> href=<span class="attribute">"#about"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-info-circle"</span>&gt;&lt;/<span class="tag">i</span>&gt;About&lt;/<span class="tag">a</span>&gt;
+            &lt;<span class="tag">a</span> href=<span class="attribute">"#services"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-cogs"</span>&gt;&lt;/<span class="tag">i</span>&gt;Services&lt;/<span class="tag">a</span>&gt;
+            &lt;<span class="tag">a</span> href=<span class="attribute">"#contact"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-envelope"</span>&gt;&lt;/<span class="tag">i</span>&gt;Contact&lt;/<span class="tag">a</span>&gt;
+          &lt;/<span class="tag">div</span>&gt;
+        &lt;/<span class="tag">body</span>&gt;
+        &lt;/<span class="tag">html</span>&gt;
+        </code>
+        </pre>
+
+        <button id="copy-btn" class="copy-btn">Copy</button>
+    </div>
+
+    <script>
+        // Copy to clipboard functionality
+        const copyButton = document.getElementById('copy-btn');
+        copyButton.addEventListener('click', () => {
+            const codeBox = document.getElementById('code-box');
+            const range = document.createRange();
+            range.selectNode(codeBox);
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            copyButton.textContent = 'Copied!';
+            copyButton.classList.add('copied');
+            setTimeout(() => {
+                copyButton.textContent = 'Copy';
+                copyButton.classList.remove('copied');
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>
+
+
+

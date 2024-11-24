@@ -16,21 +16,21 @@
         }
 
         /* Navbar Styling */
-        .navbar {
+        .navbar1 {
             display: flex;
             align-items: center;
             background-color: #333;
             padding: 10px 20px;
         }
 
-        .logo {
+        .logo1 {
             font-size: 20px;
             font-weight: bold;
             color: white;
             margin-right: auto;
         }
 
-        .navbar a {
+        .navbar1 a {
             color: white;
             text-decoration: none;
             padding: 10px 15px;
@@ -39,18 +39,18 @@
             align-items: center;
         }
 
-        .navbar a:hover {
+        .navbar1 a:hover {
             background-color: #575757;
             border-radius: 5px;
         }
 
         /* Icon Styling */
-        .navbar i {
+        .navbar1 i {
             margin-right: 8px;
         }
 
         /* Copy Button Styling */
-        .copy-btn {
+        .copy-btn1 {
             margin-left: 88.5%;
             position: absolute;
             top: 10px;
@@ -63,7 +63,7 @@
             cursor: pointer;
         }
 
-        .copy-btn.copied {
+        .copy-btn1.copied {
             background-color: #28a745;
         }
 
@@ -85,35 +85,35 @@
         }
 
         /* Syntax Highlighting */
-        .tag {
+        .tag1 {
             color: #0000FF; /* Blue */
         }
 
-        .attribute {
+        .attribute1 {
             color: #FF0000; /* Red */
             font-weight: bold; /* Thicker Red */
         }
 
-        .value {
+        .value1 {
             color: #1e90ff; /* Blue */
         }
 
-        .hex-value {
+        .hex-value1 {
             color: #32CD32; /* Green */
         }
 
-        .remaining-text {
+        .remaining-text1 {
             color: #FF1493; /* Pink */
         }
 
-        .highlight {
+        .highlight1 {
             color: #fdf9ff;
             background-color: black;
             padding: 2px 5px;
             border-radius: 3px;
         }
 
-        .explanation {
+        .explanation1 {
             display: block;
             margin-top: 5px;
             margin-left: 25px;
@@ -139,8 +139,8 @@
     <!-- Main Content -->
     <div class="main-container">
         <!-- Navbar with Icon Example -->
-        <div class="navbar">
-            <div class="logo">MyWebsite</div>
+        <div class="navbar1">
+            <div class="logo1">MyWebsite</div>
             <a href="#home"><i class="fas fa-home"></i>Home</a>
             <a href="#about"><i class="fas fa-info-circle"></i>About</a>
             <a href="#services"><i class="fas fa-cogs"></i>Services</a>
@@ -164,27 +164,27 @@
         <!-- Code Box -->
         <div style="position: relative;">
             <pre id="code-box">
-        <code>&lt;<span class="tag">!DOCTYPE</span> html&gt;
-        &lt;<span class="tag">html</span> lang=<span class="attribute">"en"</span>&gt;
-        &lt;<span class="tag">head</span&gt;
-          &lt;<span class="tag">meta</span> charset=<span class="attribute">"UTF-8"</span>&gt;
-          &lt;<span class="tag">meta</span> name=<span class="attribute">"viewport"</span> content=<span class="attribute">"width=device-width, initial-scale=1.0"</span>&gt;
-          &lt;<span class="tag">title</span>&gt;Navbar with Icon&lt;/span&gt;
-          &lt;<span class="tag">link</span> rel=<span class="attribute">"stylesheet"</span> href=<span class="attribute">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"</span>&gt;
-          &lt;<span class="tag">style</span>&gt;
-            .navbar {
+        <code>&lt;<span class="tag1">!DOCTYPE</span> html&gt;
+        &lt;<span class="tag1">html</span> lang=<span class="attribute1">"en"</span>&gt;
+        &lt;<span class="tag1">head</span&gt;
+          &lt;<span class="tag1">meta</span> charset=<span class="attribute1">"UTF-8"</span>&gt;
+          &lt;<span class="tag1">meta</span> name=<span class="attribute1">"viewport"</span> content=<span class="attribute1">"width=device-width, initial-scale=1.0"</span>&gt;
+          &lt;<span class="tag1">title</span>&gt;Navbar with Icon&lt;/<span class="tag1">title</span>&gt;
+          &lt;<span class="tag1">link</span> rel=<span class="attribute1">"stylesheet"</span> href=<span class="attribute1">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"</span>&gt;
+          &lt;<span class="tag1">style</span>&gt;
+            .navbar1 {
               display: flex;
               align-items: center;
-              background-color: <span class="hex-value">#333</span>;
+              background-color: <span class="hex-value1">#333</span>;
               padding: 10px 20px;
             }
-            .navbar .logo {
+            .navbar1 .logo1 {
               font-size: 20px;
               font-weight: bold;
               color: white;
               margin-right: auto;
             }
-            .navbar a {
+            .navbar1 a {
               color: white;
               text-decoration: none;
               padding: 10px 15px;
@@ -192,51 +192,62 @@
               display: flex;
               align-items: center;
             }
-            .navbar a:hover {
-              background-color: <span class="hex-value">#575757</span>;
+            .navbar1 a:hover {
+              background-color: <span class="hex-value1">#575757</span>;
               border-radius: 5px;
             }
-            .navbar i {
+            .navbar1 i {
               margin-right: 8px;
             }
-          &lt;/<span class="tag">style</span>&gt;
-        &lt;/<span class="tag">head</span>&gt;
-        &lt;<span class="tag">body</span>&gt;
-          &lt;<span class="tag">div</span> class=<span class="attribute">"navbar"</span>&gt;
-            &lt;<span class="tag">div</span> class=<span class="attribute">"logo"</span>&gt;MyWebsite&lt;/<span class="tag">div</span>&gt;
-            &lt;<span class="tag">a</span> href=<span class="attribute">"#home"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-home"</span>&gt;&lt;/<span class="tag">i</span>&gt;Home&lt;/<span class="tag">a</span>&gt;
-            &lt;<span class="tag">a</span> href=<span class="attribute">"#about"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-info-circle"</span>&gt;&lt;/<span class="tag">i</span>&gt;About&lt;/<span class="tag">a</span>&gt;
-            &lt;<span class="tag">a</span> href=<span class="attribute">"#services"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-cogs"</span>&gt;&lt;/<span class="tag">i</span>&gt;Services&lt;/<span class="tag">a</span>&gt;
-            &lt;<span class="tag">a</span> href=<span class="attribute">"#contact"</span>&gt;&lt;<span class="tag">i</span> class=<span class="attribute">"fas fa-envelope"</span>&gt;&lt;/<span class="tag">i</span>&gt;Contact&lt;/<span class="tag">a</span>&gt;
-          &lt;/<span class="tag">div</span>&gt;
-        &lt;/<span class="tag">body</span>&gt;
-        &lt;/<span class="tag">html</span>&gt;</code>
+          &lt;/<span class="tag1">style</span>&gt;
+        &lt;/<span class="tag1">head</span>&gt;
+        &lt;<span class="tag1">body</span>&gt;
+          &lt;<span class="tag1">div</span> class=<span class="attribute1">"navbar1"</span>&gt;
+            &lt;<span class="tag1">div</span> class=<span class="attribute1">"logo1"</span>&gt;MyWebsite&lt;/<span class="tag1">div</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#home"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-home"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Home&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#about"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-info-circle"</span>&gt;&lt;/<span class="tag1">i</span>&gt;About&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#services"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-cogs"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Services&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#contact"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-envelope"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Contact&lt;/<span class="tag1">a</span>&gt;
+          &lt;/<span class="tag1">div</span>&gt;
+        &lt;/<span class="tag1">body</span>&gt;
+        &lt;/<span class="tag1">html</span&gt;</code>
         </pre>
 
-        <button id="copy-btn" class="copy-btn">Copy</button>
+            <!-- Copy Button -->
+            <button id="copy-btn" class="copy-btn1">Copy</button>
+        </div>
     </div>
 
     <script>
-        // Copy to clipboard functionality
         const copyButton = document.getElementById('copy-btn');
+        const codeBox = document.getElementById('code-box');
+
         copyButton.addEventListener('click', () => {
-            const codeBox = document.getElementById('code-box');
+            // Select the code text
             const range = document.createRange();
             range.selectNode(codeBox);
-            window.getSelection().removeAllRanges(); // Clear any previous selections
-            window.getSelection().addRange(range);
-            document.execCommand('copy');
-            copyButton.textContent = 'Copied!';
-            copyButton.classList.add('copied');
-            setTimeout(() => {
-                copyButton.textContent = 'Copy';
-                copyButton.classList.remove('copied');
-            }, 2000);
+            window.getSelection().removeAllRanges(); // Clear current selections
+            window.getSelection().addRange(range); // Select the text
+
+            try {
+                // Copy the text
+                document.execCommand('copy');
+                // Change button text after copying
+                copyButton.textContent = 'Copied!';
+                copyButton.classList.add('copied');
+                // Reset button text after 2 seconds
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy';
+                    copyButton.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                console.error('Error copying text: ', err);
+            }
+
+            // Clear the selection
+            window.getSelection().removeAllRanges();
         });
     </script>
-
 </body>
 
 </html>
-
-
